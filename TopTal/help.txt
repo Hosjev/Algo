@@ -1,0 +1,4 @@
+1. I/O bound or CPU bound use multithreading module (prefer threads on IO)
+2. CPU bound tasks use multiprocessing
+3. Backend larger scale queuing for dividing workload use RQ (or Celery, etc) with Redis
+4. Though I'm not using it here for everything, note that urllib is not ASYNChronous. But AIOHTTP is.

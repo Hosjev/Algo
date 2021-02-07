@@ -1,0 +1,25 @@
+1. DFS - A Depth First Search is: diving from a root node into a tree or graph until reaching the lowest points of all branches (vertically).
+
+      0
+     / \
+    1   2
+         \
+          3
+         /
+        4
+
+*we go 0-4 then 0-1
+*we accomplish this by using LIFO during exploration
+
+2. BFS - A Breadth First Search is: diving from a root node into a tree and exploring all branches as you discover them horizonitally.
+
+       0
+      / \
+     1   2
+    /   / \
+   4   5   3
+          /
+         6
+
+*we go 0, 1, 2, 4, 3, 5, 6
+*we accomplish this by using FIFO during exploration

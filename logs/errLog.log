@@ -1,0 +1,13 @@
+Sat Mar 21 08:42:36 2020
+<class 'ValueError'>
+Sat Mar 21 08:42:36 2020
+<class 'ValueError'>
+Sat Mar 21 08:44:08 2020
+Item [fuss] in list received: <class 'ValueError'>
+Sat Mar 21 08:44:08 2020
+Item [boo] in list received: <class 'ValueError'>
+date
+Wed Mar 25 09:14:10 PDT 2020
+Wed Mar 25 09:14:22 PDT 2020
+Mon Mar 30 10:38:08 2020
+First test of log function

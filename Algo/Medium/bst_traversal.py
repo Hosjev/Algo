@@ -13,13 +13,14 @@ Input:
       1
     array = []
 Output:
-    in_order: [1, 2, 5, 5, 10, 15, 22]
-    pre_order: [10, 5, 2, 1, 5, 15, 22]
-    post_order: [1, 2, 5, 5, 22, 15, 10]
+    in_order: [1, 2, 5, 5, 10, 15, 22] # most left to leaf-right
+    pre_order: [10, 5, 2, 1, 5, 15, 22] # root then left to right (DESC) by branch
+    post_order: [1, 2, 5, 5, 22, 15, 10] # left most leaf (ASC) up to root
 
 * follow Bst properties
 answer - O(N)ST
 """
+
 
 class BST:
     def __init__(self, value):
@@ -33,17 +34,17 @@ def inOrderTraverse(tree, array):
     if not tree:
         return None
     inOrderTraverse(tree.left, array)
-    #print(tree.value) # None answers then the 1st callback
+    # print(tree.value) # None answers then the 1st callback
     array.append(tree.value)
     inOrderTraverse(tree.right, array)
-    return array # This gets returned up the stack though we have no 'state'
+    return array  # This gets returned up the stack though we have no 'state'
 
 
 def preOrderTraverse(tree, array):
     # Left to right
     if not tree:
         return None
-    #print(tree.value)
+    # print(tree.value)
     array.append(tree.value)
     preOrderTraverse(tree.left, array)
     preOrderTraverse(tree.right, array)
@@ -57,7 +58,7 @@ def postOrderTraverse(tree, array):
         return None
     postOrderTraverse(tree.left, array)
     postOrderTraverse(tree.right, array)
-    #print(tree.value)
+    # print(tree.value)
     array.append(tree.value)
     return array
 

@@ -83,6 +83,7 @@ def infinite_palindromes():
     num = 0
     while True:
         if is_palindrome(num):
+            time.sleep(.2)
             i = (yield num)
             print(f"inside IF IS: {num}")
             if i is not None:
@@ -90,11 +91,13 @@ def infinite_palindromes():
         print(f"outside IF IS: {num}")
         num += 1
 
-#palgen = infinite_palindromes()
+import time
 
-#for i in palgen:
-    #digits = len(str(i))
-    #palgen.send(10 ** (digits))
+palgen = infinite_palindromes()
+
+for i in palgen:
+    digits = len(str(i))
+    palgen.send(10 ** (digits))
 
 #for i in infinite_sequence():
     #pal = is_palindrome(i)

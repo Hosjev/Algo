@@ -1732,3 +1732,336 @@ Mon Mar 30 19:03:23 2020--Took 15.768315315246582 seconds to download 31 images.
 2020-11-30 19:28:53,590 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
 2020-11-30 19:28:53,590 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
 2020-11-30 19:28:53,590 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:03:27,796 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:03:27,808 - TopTal_multi.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:03:27,809 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:03:27,809 - TopTal_multi.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:03:27,809 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:03:28,256 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:03:28,574 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:03:28,825 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:03:29,275 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:03:29,564 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:03:29,835 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:03:30,187 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:03:30,628 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:03:31,014 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:03:31,294 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:03:31,584 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:03:31,886 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:03:32,134 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:03:32,425 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:03:32,814 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:05:27,190 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:05:27,190 - TopTal_multi.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:05:27,190 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:05:27,190 - TopTal_multi.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:05:27,191 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:05:27,618 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:05:27,922 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:05:28,226 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:05:28,710 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:05:28,998 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:05:29,286 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:05:29,671 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:05:30,148 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:05:30,516 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:05:30,775 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:05:31,132 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:05:31,442 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:05:31,723 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:05:32,040 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:05:32,337 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:05:32,617 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:05:32,958 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:05:33,330 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/66gHK61.png
+2021-03-11 16:05:33,635 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:05:33,948 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:05:34,180 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:05:34,686 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:05:34,994 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:05:35,470 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:05:35,806 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:05:36,155 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:05:36,445 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:05:36,771 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:05:37,066 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:05:37,509 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Bdp8ftI.png
+2021-03-11 16:05:38,017 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:05:38,304 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:05:38,653 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/vumsiSa.jpg
+2021-03-11 16:05:38,654 - TopTal_multi - INFO - 33 Imgur images downloaded in 12.610168933868408.
+2021-03-11 16:05:38,654 - TopTal_multi - INFO - Average time for download: 0.3821263313293457.
+2021-03-11 16:15:32,188 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:15:32,188 - TopTal_multi.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:15:32,188 - TopTal_multi.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:15:32,188 - TopTal_multi.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:15:32,493 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:15:32,521 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:15:32,532 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:15:32,575 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:15:32,586 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:15:32,653 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:15:32,655 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:15:32,663 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:15:32,684 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:15:32,708 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:15:32,865 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:15:32,946 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:15:32,957 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:15:32,990 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:15:32,996 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:15:33,141 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:15:33,148 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/qZX1mAn.png
+2021-03-11 16:15:33,152 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:15:33,211 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:15:33,245 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:15:33,297 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:15:33,319 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:15:33,395 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:15:33,465 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/66gHK61.png
+2021-03-11 16:15:33,470 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:15:33,479 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:15:33,481 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:15:33,717 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:15:33,815 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:15:33,831 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/vumsiSa.jpg
+2021-03-11 16:15:33,908 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/Bdp8ftI.png
+2021-03-11 16:15:34,025 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:15:34,076 - TopTal_multi.download - INFO - Downloaded: https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:15:34,077 - TopTal_multi - INFO - 33 Imgur images downloaded in 3.3779125213623047.
+2021-03-11 16:15:34,077 - TopTal_multi - INFO - Average time for download: 0.10236098549582741.
+2021-03-11 16:18:03,080 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:18:03,080 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:18:03,080 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:18:03,080 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:18:03,081 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:18:03,658 - TopTal_multi - INFO - Downloaded https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:18:03,670 - TopTal_multi - INFO - Downloaded https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:18:03,932 - TopTal_multi - INFO - Downloaded https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:18:03,943 - TopTal_multi - INFO - Downloaded https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:18:03,966 - TopTal_multi - INFO - Downloaded https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:18:03,967 - TopTal_multi - INFO - Downloaded https://i.imgur.com/8romstd.jpg
+2021-03-11 16:18:04,041 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:18:04,055 - TopTal_multi - INFO - Downloaded https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:18:04,072 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:18:04,076 - TopTal_multi - INFO - Downloaded https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:18:04,088 - TopTal_multi - INFO - Downloaded https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:18:04,107 - TopTal_multi - INFO - Downloaded https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:18:04,115 - TopTal_multi - INFO - Downloaded https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:18:04,145 - TopTal_multi - INFO - Downloaded https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:18:04,257 - TopTal_multi - INFO - Downloaded https://i.imgur.com/EKasN1f.png
+2021-03-11 16:18:04,285 - TopTal_multi - INFO - Downloaded https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:18:04,300 - TopTal_multi - INFO - Downloaded https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:18:04,344 - TopTal_multi - INFO - Downloaded https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:18:04,366 - TopTal_multi - INFO - Downloaded https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:18:04,380 - TopTal_multi - INFO - Downloaded https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:18:04,422 - TopTal_multi - INFO - Downloaded https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:18:04,540 - TopTal_multi - INFO - Downloaded https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:18:04,551 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:18:04,631 - TopTal_multi - INFO - Downloaded https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:18:04,689 - TopTal_multi - INFO - Downloaded https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:18:04,691 - TopTal_multi - INFO - Downloaded https://i.imgur.com/66gHK61.png
+2021-03-11 16:18:04,742 - TopTal_multi - INFO - Downloaded https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:18:04,778 - TopTal_multi - INFO - Downloaded https://i.imgur.com/qZX1mAn.png
+2021-03-11 16:18:04,844 - TopTal_multi - INFO - Downloaded https://i.imgur.com/vumsiSa.jpg
+2021-03-11 16:18:05,211 - TopTal_multi - INFO - Downloaded https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:18:05,533 - TopTal_multi - INFO - Downloaded https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:18:05,535 - TopTal_multi - INFO - Imgur images downloaded in 3.8360490798950195.
+2021-03-11 16:18:51,474 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:18:51,475 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:18:51,475 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:18:51,475 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:18:51,830 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:18:51,843 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:18:51,874 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:18:51,878 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:18:52,055 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:18:52,132 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:18:52,150 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:18:52,283 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:18:52,283 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:18:52,294 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:18:52,322 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:18:52,416 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:18:52,479 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:18:52,533 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:18:52,551 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:18:52,697 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:18:52,700 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:18:52,720 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:18:52,811 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:18:52,830 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/qZX1mAn.png
+2021-03-11 16:18:52,887 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/66gHK61.png
+2021-03-11 16:18:52,954 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:18:53,009 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:18:53,128 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:18:53,215 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:18:53,292 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:18:53,306 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:18:53,361 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:18:53,470 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/r69dTyr.jpg
+2021-03-11 16:18:53,587 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:18:53,597 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/vumsiSa.jpg
+2021-03-11 16:18:53,628 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/zXlIAfY.jpg
+2021-03-11 16:18:53,635 - TopTal_multi - INFO - 32 Imgur images downloaded in 3.2876198291778564.
+2021-03-11 16:18:53,635 - TopTal_multi - INFO - Average time for download: 0.10273811966180801.
+2021-03-11 16:19:40,395 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:19:40,396 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:19:40,396 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:19:40,396 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:19:40,396 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:19:40,693 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:19:40,732 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:19:40,765 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:19:40,813 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:19:40,847 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:19:40,850 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:19:40,864 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:19:40,914 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:19:41,067 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:19:41,115 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:19:41,162 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:19:41,189 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:19:41,219 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:19:41,296 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:19:41,301 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:19:41,308 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/qZX1mAn.png
+2021-03-11 16:19:41,703 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:19:41,724 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:19:41,731 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:19:41,793 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:19:41,816 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:19:41,817 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:19:41,818 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/66gHK61.png
+2021-03-11 16:19:41,820 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:19:42,040 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:19:42,084 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:19:42,145 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:19:42,188 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:19:42,244 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:19:42,450 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:19:42,619 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:19:42,638 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Bdp8ftI.png
+2021-03-11 16:19:42,829 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:19:42,844 - TopTal_multi - INFO - 33 Imgur images downloaded in 4.331363916397095.
+2021-03-11 16:19:42,844 - TopTal_multi - INFO - Average time for download: 0.13125345201203317.
+2021-03-11 16:20:24,122 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:20:24,123 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:20:24,123 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:20:24,123 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:20:24,124 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:20:24,484 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:20:24,498 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:20:24,504 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:20:24,528 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:20:24,558 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:20:24,707 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:20:24,935 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:20:24,968 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:20:24,990 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:20:25,094 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:20:25,107 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:20:25,108 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:20:25,154 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:20:25,206 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:20:25,256 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/qZX1mAn.png
+2021-03-11 16:20:25,309 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:20:25,344 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:20:25,371 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:20:25,469 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:20:25,537 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:20:25,595 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:20:25,632 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/66gHK61.png
+2021-03-11 16:20:25,696 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:20:25,697 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:20:25,847 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:20:25,918 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:20:25,933 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:20:25,990 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:20:25,997 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:20:26,056 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:20:26,186 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Bdp8ftI.png
+2021-03-11 16:20:26,285 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/vumsiSa.jpg
+2021-03-11 16:20:26,426 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:20:26,474 - TopTal_multi - INFO - 33 Imgur images downloaded in 3.333904266357422.
+2021-03-11 16:20:26,475 - TopTal_multi - INFO - Average time for download: 0.10102740201083096.
+2021-03-11 16:21:03,005 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:21:03,005 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:21:03,006 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:21:03,006 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:21:03,006 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:21:03,334 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:21:03,340 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:21:03,363 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:21:03,368 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:21:03,387 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:21:03,402 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:21:03,423 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/8romstd.jpg
+2021-03-11 16:21:03,449 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:21:03,520 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:21:03,586 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:21:03,619 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:21:03,635 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/EKasN1f.png
+2021-03-11 16:21:03,780 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:21:03,822 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:21:03,866 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:21:03,874 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/chmmGyQ.jpg
+2021-03-11 16:21:03,990 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:21:03,990 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:21:04,024 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/66gHK61.png
+2021-03-11 16:21:04,151 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:21:04,177 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:21:04,192 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:21:04,211 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:21:04,305 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:21:04,480 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:21:04,571 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:21:04,692 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:21:04,772 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/Bdp8ftI.png
+2021-03-11 16:21:04,776 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/zXlIAfY.jpg
+2021-03-11 16:21:04,932 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:21:04,957 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:21:04,969 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/vumsiSa.jpg
+2021-03-11 16:21:05,399 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:21:05,448 - TopTal_multi - INFO - 33 Imgur images downloaded in 3.5428617000579834.
+2021-03-11 16:21:05,448 - TopTal_multi - INFO - Average time for download: 0.10735944545630252.
+2021-03-11 16:21:24,230 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:21:24,230 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:21:24,230 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:21:24,231 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2021-03-11 16:21:24,231 - TopTal_multi.TopTal.download - ERROR - on file image/png received: <class 'AttributeError'>
+2021-03-11 16:21:24,638 - TopTal_multi - INFO - Downloaded https://i.imgur.com/g9peHsK.jpg
+2021-03-11 16:21:24,668 - TopTal_multi - INFO - Downloaded https://i.imgur.com/MjYnvvj.jpg
+2021-03-11 16:21:24,726 - TopTal_multi - INFO - Downloaded https://i.imgur.com/F8IxOA8.jpg
+2021-03-11 16:21:24,755 - TopTal_multi - INFO - Downloaded https://i.imgur.com/t5E9Afr.jpg
+2021-03-11 16:21:24,755 - TopTal_multi - INFO - Downloaded https://i.imgur.com/xp4WtMb.jpg
+2021-03-11 16:21:24,831 - TopTal_multi - INFO - Downloaded https://i.imgur.com/bqrxyFV.jpg
+2021-03-11 16:21:24,836 - TopTal_multi - INFO - Downloaded https://i.imgur.com/BSyb11o.jpg
+2021-03-11 16:21:24,861 - TopTal_multi - INFO - Downloaded https://i.imgur.com/zXlIAfY.jpg
+2021-03-11 16:21:24,980 - TopTal_multi - INFO - Downloaded https://i.imgur.com/0R4wiMo.jpg
+2021-03-11 16:21:24,985 - TopTal_multi - INFO - Downloaded https://i.imgur.com/5Cp20lc.jpg
+2021-03-11 16:21:24,985 - TopTal_multi - INFO - Downloaded https://i.imgur.com/oagV3Gp.jpg
+2021-03-11 16:21:25,050 - TopTal_multi - INFO - Downloaded https://i.imgur.com/8romstd.jpg
+2021-03-11 16:21:25,085 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Sjo81Ir.jpg
+2021-03-11 16:21:25,106 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Iv2zqQU.jpg
+2021-03-11 16:21:25,178 - TopTal_multi - INFO - Downloaded https://i.imgur.com/qZX1mAn.png
+2021-03-11 16:21:25,178 - TopTal_multi - INFO - Downloaded https://i.imgur.com/asmWaQR.jpg
+2021-03-11 16:21:25,189 - TopTal_multi - INFO - Downloaded https://i.imgur.com/QL1NlLf.jpg
+2021-03-11 16:21:25,269 - TopTal_multi - INFO - Downloaded https://i.imgur.com/z7T5RGJ.jpg
+2021-03-11 16:21:25,273 - TopTal_multi - INFO - Downloaded https://i.imgur.com/c3d7o4I.jpg
+2021-03-11 16:21:25,332 - TopTal_multi - INFO - Downloaded https://i.imgur.com/fJ2cTrm.jpg
+2021-03-11 16:21:25,353 - TopTal_multi - INFO - Downloaded https://i.imgur.com/FMYW4Ym.png
+2021-03-11 16:21:25,361 - TopTal_multi - INFO - Downloaded https://i.imgur.com/CRMAw7a.jpg
+2021-03-11 16:21:25,364 - TopTal_multi - INFO - Downloaded https://i.imgur.com/2fmLqM7.jpg
+2021-03-11 16:21:25,369 - TopTal_multi - INFO - Downloaded https://i.imgur.com/kMSokqh.jpg
+2021-03-11 16:21:25,430 - TopTal_multi - INFO - Downloaded https://i.imgur.com/ir3Duz3.jpg
+2021-03-11 16:21:25,568 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Ogaw49F.jpg
+2021-03-11 16:21:25,634 - TopTal_multi - INFO - Downloaded https://i.imgur.com/66gHK61.png
+2021-03-11 16:21:25,726 - TopTal_multi - INFO - Downloaded https://i.imgur.com/Bdp8ftI.png
+2021-03-11 16:21:25,979 - TopTal_multi - INFO - Downloaded https://i.imgur.com/CHm7z7w.png
+2021-03-11 16:21:26,100 - TopTal_multi - INFO - Downloaded https://i.imgur.com/tt3QOn9.png
+2021-03-11 16:21:26,124 - TopTal_multi - INFO - Downloaded https://i.imgur.com/EKasN1f.png
+2021-03-11 16:21:26,236 - TopTal_multi - INFO - Downloaded https://i.imgur.com/aGZc9tt.png
+2021-03-11 16:21:26,573 - TopTal_multi - INFO - Downloaded https://i.imgur.com/5NSgPZF.png
+2021-03-11 16:21:26,576 - TopTal_multi - INFO - Imgur images downloaded in 3.865875244140625.

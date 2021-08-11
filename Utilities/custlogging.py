@@ -24,7 +24,6 @@ def py_logger(log_fileh, log_name):
     main module. IE-"My_app_threading.aux_function"
     >Returns logging object.
     """
-    #tt_log = f"{curr_wd}/TopTal/all_msgs.log"
     logger = logging.getLogger(log_name)
     logger.setLevel(logging.DEBUG)
     fh = logging.FileHandler(log_fileh)

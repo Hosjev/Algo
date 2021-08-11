@@ -42,7 +42,7 @@ def download_link(directory, link):
 
 
 def setup_download_dir():
-    download_dir = Path("/home/wendiw/Xenial_Backup/PythonPlay/TopTal/images")
+    download_dir = Path("/home/wendiw/Xenial/PythonPlay/TopTal/images")
     if not download_dir.exists():
         download_dir.mkdir()
     return download_dir

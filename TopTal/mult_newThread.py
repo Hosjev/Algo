@@ -5,10 +5,10 @@ import sys
 import time
 from functools import partial
 from concurrent.futures import ThreadPoolExecutor
-curr_wd = "/home/wendiw/Xenial_Backup/PythonPlay"
+curr_wd = "/home/wendiw/Xenial/PythonPlay"
 sys.path.append(curr_wd)
 from Utilities.custlogging import py_logger
-from TopTal.download import *
+from download import *
 
 # Fire off all logging to file
 tt_log = f"{curr_wd}/TopTal/all_msgs.log"

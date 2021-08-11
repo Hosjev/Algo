@@ -2,10 +2,10 @@ import os
 import sys
 import time
 import logging
-curr_wd = "/home/wendiw/Xenial_Backup/PythonPlay"
+curr_wd = "/home/wendiw/Xenial/PythonPlay"
 sys.path.append(curr_wd)
+from download import *
 from Utilities.custlogging import py_logger
-from TopTal.download import *
 
 # Fire off all logging to file
 tt_log = f"{curr_wd}/TopTal/all_msgs.log"
@@ -22,6 +22,7 @@ def main():
     avg_time = float(dl_time)/len(links)
     logger.info(f"{len(links)} Imgur images downloaded in {dl_time}.")
     logger.info(f"Average time for download: {avg_time}.")
+
 
 if __name__ == "__main__":
     main()

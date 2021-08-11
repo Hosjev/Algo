@@ -1,4 +1,3 @@
-# Threading procs and adding them to queue
 import logging
 import os
 import sys
@@ -7,7 +6,7 @@ from queue import Queue
 from threading import Thread
 curr_wd = "/home/wendiw/Xenial_Backup/PythonPlay"
 sys.path.append(curr_wd)
-from TopTal.download import *
+from download import *
 
 
 # Fire off all logging to file
@@ -16,10 +15,10 @@ logger = logging.getLogger("TopTal_threads")
 logger.setLevel(logging.DEBUG)
 fh = logging.FileHandler(tt_log)
 fh.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fh.setFormatter(formatter)
 logger.addHandler(fh)
-
 
 
 class DownloadWorker(Thread):

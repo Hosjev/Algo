@@ -1,0 +1,38 @@
+Producer 0 sleeping for 4 seconds.
+Producer 2 sleeping for 7 seconds.
+Consumer 0 sleeping for 4 seconds.
+Consumer 1 sleeping for 4 seconds.
+Consumer 2 sleeping for 8 seconds.
+Consumer 3 sleeping for 10 seconds.
+Consumer 4 sleeping for 7 seconds.
+Producer 0 added <59595cea7d> to queue.
+Producer 0 sleeping for 8 seconds.
+Consumer 0 got element <59595cea7d> in 0.00017 seconds.
+Consumer 0 sleeping for 4 seconds.
+Producer 2 added <22a0d3a54b> to queue.
+Producer 2 sleeping for 7 seconds.
+Consumer 4 got element <22a0d3a54b> in 0.00018 seconds.
+Consumer 4 sleeping for 1 seconds.
+Producer 0 added <0ed0cb2bdf> to queue.
+Producer 0 sleeping for 6 seconds.
+Consumer 1 got element <0ed0cb2bdf> in 0.00020 seconds.
+Consumer 1 sleeping for 9 seconds.
+Producer 2 added <35ca69ed76> to queue.
+Producer 2 sleeping for 3 seconds.
+Consumer 2 got element <35ca69ed76> in 0.00018 seconds.
+Consumer 2 sleeping for 9 seconds.
+Producer 2 added <33334fbff9> to queue.
+Producer 2 sleeping for 7 seconds.
+Consumer 4 got element <33334fbff9> in 0.00022 seconds.
+Consumer 4 sleeping for 10 seconds.
+Producer 0 added <202bee88b3> to queue.
+Producer 0 sleeping for 0 seconds.
+Consumer 0 got element <202bee88b3> in 0.00017 seconds.
+Consumer 0 sleeping for 1 seconds.
+Producer 0 added <9c13d47c0f> to queue.
+Consumer 3 got element <9c13d47c0f> in 0.00008 seconds.
+Consumer 3 sleeping for 0 seconds.
+Producer 2 added <e417018239> to queue.
+Consumer 3 got element <e417018239> in 0.00010 seconds.
+Consumer 3 sleeping for 1 seconds.
+Program completed in 24.01225 seconds.

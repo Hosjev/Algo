@@ -3,7 +3,7 @@ import aiohttp
 import os
 import sys
 import time
-curr_wd = "/home/wendiw/Xenial_Backup/PythonPlay"
+curr_wd = "/home/wendiw/Xenial/PythonPlay"
 sys.path.append(curr_wd)
 from Utilities.custlogging import py_logger
 from TopTal.download import *
@@ -55,7 +55,5 @@ if __name__ == '__main__':
         # Shutdown the loop even if there is an exception
         loop.close()
     dl_time = time.time()-ts
-    #avg_time = float(dl_time)/len(links)
     logger.info(f"Imgur images downloaded in {dl_time}.")
-    #logger.info(f"Average time for download: {avg_time}.")
 

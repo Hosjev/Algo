@@ -115,6 +115,7 @@ def recur_powerset(array, idx = None):
 if __name__ == "__main__":
 
     array = [1, 2, 3]
+    array = ["a", "b", "c"]
     print(powerset(array))
     print("Bitwise:", subsets(array))
     for x in subsets_combos(array):
@@ -122,4 +123,4 @@ if __name__ == "__main__":
 
     #print(iter_powerset(array))
     #array = []
-    print(recur_powerset(array))
+    print("Recursive using subsets:", recur_powerset(array))

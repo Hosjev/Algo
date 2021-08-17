@@ -15,6 +15,8 @@ Output:
 """
 
 def selectionSort(array):
+    # Runs in O(n2) time plus whatever needs to be swapped
+    # Best case scenario is O(n) w/no changes
 
     def swap(p1, p2):
         return p2, p1
@@ -27,7 +29,9 @@ def selectionSort(array):
                 smallest = array[idx] # reset smallest every time
                 array_position = idx
         if array_position:
+            print(f"swapping in-place new current small: {array[array_position]}")
             array[run], array[array_position] = swap(array[run], array[array_position])
+            print(f"...array: {array}")
 
     return array
 

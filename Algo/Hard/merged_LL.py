@@ -16,12 +16,7 @@ answer - O(1)
 import time
 
 
-class Node:
-    def __init__(self, id):
-        self.id = id
-
-
-class LinkedList:
+class LL:
     def __init__(self, value):
         self.value = value
         self.next = None
@@ -30,18 +25,15 @@ class LinkedList:
 def cycle(node):
     if not node:
         return
-    print(node)
-    cycle(node.next)
+    else:
+        print(node.value)
+        cycle(node.next)
 
 
 def mergeLinkedLists(headOne, headTwo):
-    # Tracking 3 variables
-    # obj = the main obj passed (grows smaller)
-    # obj2 = the remaining nodes (the temp var)
-    # backward = my growing answer
-    p1 = headOne # Shallow copy
+    p1 = headOne # pointer
     p1_object = None
-    p2 = headTwo # Shallow copy
+    p2 = headTwo # pointer
     
     while p1 is not None and p2 is not None:
         if p1.value < p2.value:
@@ -63,23 +55,14 @@ def mergeLinkedLists(headOne, headTwo):
 
 if __name__ == "__main__":
 
+    head1 = LL(2)
+    head1.next = LL(4)
+    head1.next.next = LL(5)
 
-    # In this example, p2 travels 12 steps around, p1 6: 12-6 = 6/2 = 3 (distance from their meeting point to remaining loop, or the start of the loop)
-    ll = LinkedList(1)
-    l2 = LinkedList(3)
-    l3 = LinkedList(5)
-    ll.next = l2
-    ll.next.next = l3
+    head2 = LL(1)
+    head2.next = LL(2)
+    head2.next.next = LL(3)
 
-    ll2 = LinkedList(0)
-    l22 = LinkedList(2)
-    l23 = LinkedList(4)
-    ll2.next = l22
-    ll2.next.next = l23
+    new_head = (mergeLinkedLists(head1, head2))
+    print(cycle(new_head))
 
-    ll = LinkedList(0)
-    ll.next = LinkedList(2)
-    ll2 = LinkedList(1)
-    ll2.next = LinkedList(3)
-
-    l = mergeLinkedLists(ll, ll2)

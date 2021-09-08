@@ -15,11 +15,11 @@ answer - O(N)T O(d)S --N=nodes, d=depth
 
 def maxSubsetSumNoAdjacent(array):
 
-    if len(array) == 0:
+    if len(array) == 0: # Edge case no elements
         return 0
-    elif len(array) == 1:
+    elif len(array) == 1: # Edge case one element
         return array[0]
-    elif len(array) == 2:
+    elif len(array) == 2: # Edge case two elements
         return max(array)
     else:
         subsets = [0] * len(array)

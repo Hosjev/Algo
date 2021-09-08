@@ -1,4 +1,6 @@
 """
+REST API (asynchronous) example
+
 -input file URLs
     *read it one line AAT, concurrently run that URL
 -request them
@@ -118,10 +120,10 @@ if __name__ == "__main__":
     assert sys.version_info >= (3, 7), "Script requires Python 3.7+."
     here = pathlib.Path(__file__).parent
 
-    with open(here.joinpath("urls.txt")) as infile:
+    with open(here.joinpath("URLS/whit.txt")) as infile:
         urls = set(map(str.strip, infile))
 
-    outpath = here.joinpath("foundurls.txt")
+    outpath = here.joinpath("OUTPUT/foundwhit.txt")
     with open(outpath, "w") as outfile:
         outfile.write("source_url\tparsed_url\n")
 

@@ -19,23 +19,32 @@ def bubbleSort(array):
     # 2-keep track of IF SWAPPED (bool)
     # 3-if swapped, decrease array traverse by -1
     # 4-if not swapped, return array (THIS IS OUR FINAL RETURN)
-    def swap(one, two):
-        return two, one
 
-    def inner_sort(arr, final):
-        if final:
-            return array
-        final = True
-        for idx in range(len(arr)-1):
-            if array[idx] > array[idx+1]:
-                final = False
-                array[idx], array[idx+1] = swap(array[idx], array[idx+1])
-        return inner_sort(array[0:len(array)-1], final)
+    return sorter(array, False)
 
-    return inner_sort(array, False)
+
+def swap(one, two):
+    return two, one
+
+
+def sorter(arr, final):
+    if final:
+        return array
+    final = True
+    # Start from front
+    for idx in range(len(arr)-1):
+        # if current is greater than next
+        print(f"...in memory, {idx} is {arr[idx]}")
+        if array[idx] > array[idx+1]:
+            final = False
+            array[idx], array[idx+1] = swap(array[idx], array[idx+1])
+    # Put whole array thru the machine
+    return sorter(arr[0:len(arr)-1], final)
+
 
 
 if __name__ == "__main__":
     array = [8, 5, 2, 9, 5, 6, 3]
+    print(array)
     print(bubbleSort(array))
 

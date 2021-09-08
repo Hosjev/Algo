@@ -5,6 +5,7 @@ def decToBinary(num):
         # hit number again on callback with modulus (remainder of division on left)
         # With binary (2), it's always 0 or 1
         decToBinary( num // 2 )
+    #print(f"...following stack: {num}")
     print(num % 2, end="")
 
 
@@ -17,6 +18,7 @@ def decimalToBinary(n):
 
 
 if __name__ == "__main__":
+    # All of these convert integers to 8 bits, not 32
     decToBinary(17)
     print("")
     print(decimalToBinary(17))

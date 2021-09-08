@@ -1,5 +1,6 @@
 """
-Given an array of non-empty positive ints representing the amount of time specific queries take to execute. Only query can be executed at a time but in any order.
+Given an array of non-empty positive ints representing the amount of time specific queries take to execute.
+Only query can be executed at a time but in any order.
 A query's WAITING TIME is the amt of time it must wait before execution starts. IF a query is executed 2nd, its WT is the duration of 1st. IF 3rd, its WT is the sum of 1st and 2nd.
 Write function that returns min WT of all query's WT.
 For ex queries: [1, 4, 5] executed in order [5, 1, 4] -- (0) + (5) + (5 + 1) = 11WT

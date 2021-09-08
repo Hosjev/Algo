@@ -1,0 +1,4 @@
+Name: ABC
+Container: Shot glass
+Ingredients: ['Amaretto', 'Baileys irish cream', 'Cognac']
+Instructions: Layered in a shot glass.

@@ -1,3 +1,6 @@
+""" Streaming API example """
+
+
 from curio import run, spawn
 from curio.socket import *
 

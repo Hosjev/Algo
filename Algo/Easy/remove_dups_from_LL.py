@@ -27,15 +27,18 @@ def print_pretty(node):
 
 def removeDuplicatesFromLinkedList(node):
     # Write your code here.
+    # This is simply REWRITING POINTERS
 
+    # Recursion goes all the way to the end first
+    # and the last thing on stack gets priority post execution
+    # ie--whatever happens past recursive call
     def _inner_recur(node):
         if node:
-            # look forward 5, 6, 6
             print(node.value)
-            if node.next:
+            if node.next: # if WE aren't tail
                 while (node.value == node.next.value):
                     node.next = node.next.next
-                    if node.next is None:
+                    if node.next is None: # if we reached end, break
                         break
             return _inner_recur(node.next)
         else:

@@ -1,8 +1,9 @@
 """ Game guess number """
 
 import sys
+import random
 
-sys.path.append("/home/wendiw/Documents/PythonPlay")
+sys.path.append("/home/wendiw/Xenial/PythonPlay")
 
 from Exceptions.GuessGameErrs import *
 
@@ -10,11 +11,11 @@ from Exceptions.GuessGameErrs import *
 # user guesses a number until he/she gets it right
 
 # you need to guess this number
-number = 10
+number = random.randrange(1, 10)
 
 while True:
     try:
-        u_num = input("Enter a number: ")
+        u_num = input("Enter a number btw 1 and 10: ")
         u_num = int(u_num)
         if (u_num==number+1) or (u_num==number-1):
             raise ValueSoClose

@@ -20,7 +20,7 @@ def getPermutations(array):
 
 def permutation_loops(array, current, perms):
     # This is the money. Where the subarray has been exhausted and we have a current
-    if not len(array) and len(current):
+    if not array and current:
         perms.append(current)
     else:
         for i in range(len(array)):

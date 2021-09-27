@@ -11,16 +11,32 @@ def insert_or_find(nums, target):
 
 
 def binary_helper(S, E, nums, target):
-    # equation = (E - S) // 2 = len of stretch
-    # Our exit or 1st return up the stack
+    """
+    This helper follows indices
+
+    Arguments:
+        S = int (starting index within array)
+        E = int (ending index within array)
+        nums = array
+        target = int (number to look for)
+
+    ** equation = (E - S) // 2 = len of stretch
+    """    
+
+    # Our exit or 1st return up the stack should we reach last
     if (S == E):
-        return S
+        # If at end AND target is greater than last index int
+        if (S == len(nums) - 1) and (target > nums[S]):
+            return S + 1
+        # Our target equals OR is less than integer
+        else:
+            return S
 
     middle = (E - S) // 2
     left = (S, S+middle)
     right = (S+middle+1, E)
 
-    # Target reached
+    # Target reached, immediate return
     if target == nums[left[1]]:
         return left[1]
     if target == nums[right[0]]:
@@ -46,5 +62,8 @@ a = [1]
 t = 0
 a = [1, 2, 3]
 t = 0
-
 print(insert_or_find(a, t))
+
+# 1st problem -- end of array
+print(insert_or_find([1, 3, 5, 6], 7))
+print(insert_or_find([1, 3, 5, 8], 7))

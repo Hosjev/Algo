@@ -1,0 +1,127 @@
+CREATE DATABASE cocktails;
+
+
+CREATE USER 'drinkMaster'@'localhost' IDENTIFIED BY 'Dr1nks..!!';
+
+
+GRANT ALL PRIVILEGES ON cocktails.* TO 'drinkMaster'@'localhost';
+
+
+FLUSH PRIVILEGES;
+
+
+CREATE TABLE drinks (
+    id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(68) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE types (
+    id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(32) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE drink_type (
+    drink_id MEDIUMINT NOT NULL,
+    type_id MEDIUMINT NOT NULL,
+    FOREIGN KEY (drink_id) REFERENCES drinks(id),
+    FOREIGN KEY (type_id) REFERENCES types(id)
+);
+
+CREATE TABLE containers (
+    id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(32) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE drink_cont (
+    drink_id MEDIUMINT NOT NULL,
+    cont_id MEDIUMINT NOT NULL,
+    FOREIGN KEY (drink_id) REFERENCES drinks(id),
+    FOREIGN KEY (cont_id) REFERENCES containers(id)
+);
+
+CREATE TABLE instructions (
+    id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    drink_id MEDIUMINT,
+    description VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (drink_id) REFERENCES drinks(id)
+);
+
+
+CREATE TABLE ingredients (
+    id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(68) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE measurements (
+    id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    amount VARCHAR(68) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE ingredient_combos (
+    drink_id MEDIUMINT NOT NULL,
+    ingred_id MEDIUMINT NOT NULL,
+    measure_id MEDIUMINT NOT NULL,
+    FOREIGN KEY (drink_id) REFERENCES drinks(id),
+    FOREIGN KEY (ingred_id) REFERENCES ingredients(id),
+    FOREIGN KEY (measure_id) REFERENCES measurements(id)
+);
+
+# Insertions
+INSERT INTO drinks (name) VALUES ("Whiskey Sour");
+INSERT INTO drinks (name) VALUES ("Old Fashioned");
+INSERT INTO ingredients (name) VALUES ("blended whiskey");
+INSERT INTO ingredients (name) VALUES ("juice of fresh lemon");
+INSERT INTO ingredients (name) VALUES ("lemon slice");
+INSERT INTO ingredients (name) VALUES ("powdered sugar");
+INSERT INTO ingredients (name) VALUES ("cherry");
+
+INSERT INTO measurements (amount) VALUES ("1/2");
+INSERT INTO measurements (amount) VALUES ("1 tsp");
+INSERT INTO measurements (amount) VALUES ("2 oz");
+INSERT INTO measurements (amount) VALUES ("1");
+
+INSERT INTO ingredient_combos (drink_id, ingred_id, measure_id) VALUES ();
+
+# Drops
+DROP TABLE Drinks;
+
+# Select
+# Just get drink_id and feed to machine
+select drinks.id from drinks
+where drinks.name = "Whiskey Sour";
+
+# ingreds
+select drinks.name, ingredients.name, measurements.amount
+from ingredient_combos
+inner join drinks on ingredient_combos.drink_id = drinks.id
+inner join ingredients on ingredient_combos.ingred_id = ingredients.id
+inner join measurements on ingredient_combos.measure_id = measurements.id
+where drinks.id = 1;
+
+# container
+select containers.name
+from drink_cont
+inner join drinks on drink_cont.drink_id = drinks.id
+inner join containers on drink_cont.cont_id = containers.id
+where drinks.id = 1;
+
+# type
+select types.name
+from drink_type
+inner join drinks on drink_type.drink_id = drinks.id
+inner join types on drink_type.id = types.id
+where drinks.id = 1;
+
+# instruct
+select instructions.description
+from instructions
+inner join drinks on instructions.drink_id = drinks.id
+where drinks.id = 1;

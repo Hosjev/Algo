@@ -25,7 +25,7 @@ class LinkedList:
 
 
 def reverseLinkedList(head):
-    # get moves; janky and horrible
+    # Iterative
     tail = None
     current = head # shallow
 

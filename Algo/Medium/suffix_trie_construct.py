@@ -69,5 +69,6 @@ if __name__ == "__main__":
 
     trie = SuffixTrie(string)
 
-    print(trie.contains("abc"))
-    print(trie.contains("abs"))
+    print(trie.root)
+    #print(trie.contains("abc"))
+    #print(trie.contains("abs"))

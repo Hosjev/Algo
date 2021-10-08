@@ -1,6 +1,6 @@
 """Examples of the fancier/more complex decorators"""
 import sys
-sys.path.append("/home/wendiw/Xenial_Backup/PythonPlay")
+sys.path.append("/home/wendiw/Xenial/PythonPlay")
 from Utilities.decorators import *
 from functools import lru_cache
 

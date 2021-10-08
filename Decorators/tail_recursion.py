@@ -1,5 +1,6 @@
 class Recursion(RecursionError):
     def __init__(self, *args, **kwargs):
+        """ Thanks to C. Penner """
         self.args = args
         self.kwargs = kwargs
 

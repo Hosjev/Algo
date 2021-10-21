@@ -21,7 +21,7 @@ class WebAPI:
     def get_resource(self):
         self.resource = requests.get(self.url)
 
-    def parse_json(self):
+    def parse_json(self) -> dict:
         return self.resource.json()
 
     def status_code(self):
@@ -85,6 +85,11 @@ if __name__ == "__main__":
     web_object = WebAPI(read_url)
     web_object.get_resource()
     url_data = web_object.parse_json()
+    print(type(url_data))
+    sud = json.dumps(url_data)
+    print(type(sud))
+    dud = json.loads(sud)
+    print(type(dud))
 
     # JSON data retrieved.
     # Now, we get info out and write it.

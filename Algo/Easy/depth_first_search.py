@@ -53,5 +53,4 @@ if __name__ == "__main__":
     tree.children[2].children[0].addChild("K")
     tree.children[2].addChild("H")
 
-
     print(tree.depthFirstSearch([]))

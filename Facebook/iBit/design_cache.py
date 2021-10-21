@@ -4,13 +4,19 @@ class Cache(object):
         """
         :type capacity: int
         Performant issues: scalability, availability
-        Questions: Without going to external/ready-to-use load balancers,
+        Questions: Without going to external/ready-to-use distributed caches (memcached),
                    what is best intra/extranet solution?
-                   How many machines? Cores? How much memory? Type of memory?
+                   What kind of data? What is calling app? Expected throughput?
                    Multiprocessing better than threading if memory bottlenecked.
                    Availability vs consistency?
-                   *Implement LRU when cache reaches size or as error handling?
+                   *Implementing LRU seems to be best solution for homegrown
+        Aspects of distributed cache:
+            1) cache size - the # of records each cache can hold
+            2) cache expiration - the expiration time of each record (not accessed?)
+            3) cache invalidation - when to remove a cache from network if data out-of-sync/stale
         """
+        # Mock cache
+        self.capacity = capacity
         self.cache = dict().fromkeys([i for i in range(capacity)])
 
 
@@ -22,19 +28,31 @@ class Cache(object):
         try:
             return self.cache[key]
         except KeyError:
-            return self.put(key)
+            return self.set(key)
         
 
-    def put(self, key):
+    def set(self, key):
         """
         :type key: int
         :type value: int
         :rtype: value
         """
-        self.cache[key] = self._get_database(key)
+        insertion = self._get_database(key)
+        if len(self.cache) >= capacity:
+            self._remove_tail()
+        self.cache[key] = insertion
         return self.cache[key]
 
-        
+
+    def _remove_tail(self):
+        """
+        W/o constraints, remove end
+        Using Py dict, b/c keys are unique,
+            employ swapping method when full
+        """
+        self.cache.pop()
+
+
     def _get_database(self, key):
         """
         :type key: int

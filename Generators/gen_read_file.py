@@ -30,10 +30,9 @@ lines = (entry.rstrip().split(",") for entry in gen_data)
 # gen an object of dicts
 data = (dict(zip(col_headers, line)) for line in lines)
 
+# ANOTHER gen of scrubbed data
 round_data = (
-    (entry.get("company"), int(entry.get("raisedAmt")))
-    for entry in data
-    if entry.get("round") == "a"
+    (entry.get("company"), int(entry.get("raisedAmt"))) for entry in data if entry.get("round") == "a"
 )
 
 # Now iterate through data and build a dict on unique names

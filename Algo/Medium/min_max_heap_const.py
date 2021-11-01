@@ -47,16 +47,10 @@ class MinHeap:
         self.heap = self.buildHeap(array, heapType)
 
     def _swap(self, a, b, array):
-        # Just feed the index
-        val1 = array[a]
-        val2 = array[b]
-        array[a] = val2
-        array[b] = val1
+        array[b], array[a] = array[a], array[b]
         return array
 
     def buildHeap(self, array, heapType):
-        # BH is essentially satisfying the completeness of a heap
-        # Notice this is done on an UNSORTED array
         # Say on a 9 len array, 3 would start, 8 would mark the end
         # 3 IS THE LAST PARENT W/CHILDREN
         start_pos = (len(array) -2)  // 2

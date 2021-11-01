@@ -8,4 +8,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.sendall(b'Im saying hello from the client')
     data = s.recv(1024)
 
+# TODO: add input from user to send (just receive echo)
 print(f"socket closed and received data from server: {data}")

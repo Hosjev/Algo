@@ -1,4 +1,5 @@
 class FatFinger:
+    """ TYPEAHEAD """
     def __init__(self, word):
         self.candidates = self.neighbor_helper(word)
 

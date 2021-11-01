@@ -13,7 +13,15 @@ def recurse(*args, **kwargs):
 def tail_recurse(func):
     """
     Decorate recursive tail function with this
-    **essentially, running a new function everytime
+    **using:
+          1) decorate function/method w/tail_recurse
+          2) which simply returns the object execution
+          3) call recurse instead of function/method inside
+          4) which raises 'Recursion' (catching RE)
+          5) which sets variables to object
+          6) when RE occurs, reset those variables and...
+          7) continue as if function/method called 1st time
+          8) stack is reset w/cPy defaults until limit reached
     """
     def decorated(*args, **kwargs):
         while True:

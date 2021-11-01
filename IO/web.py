@@ -85,11 +85,6 @@ if __name__ == "__main__":
     web_object = WebAPI(read_url)
     web_object.get_resource()
     url_data = web_object.parse_json()
-    print(type(url_data))
-    sud = json.dumps(url_data)
-    print(type(sud))
-    dud = json.loads(sud)
-    print(type(dud))
 
     # JSON data retrieved.
     # Now, we get info out and write it.

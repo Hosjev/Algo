@@ -114,15 +114,13 @@ async def bulk_crawl_and_write(outfile: IO, urls: set, **kwargs) -> None:
 
 if __name__ == "__main__":
     # Basically, run the loop, no args (we could arg the file input/output)
-    import pathlib
-    import sys
-
     assert sys.version_info >= (3, 7), "Script requires Python 3.7+."
     here = pathlib.Path(__file__).parent
 
     with open(here.joinpath("URLS/whit.txt")) as infile:
         urls = set(map(str.strip, infile))
 
+    # Write header info
     outpath = here.joinpath("OUTPUT/foundwhit.txt")
     with open(outpath, "w") as outfile:
         outfile.write("source_url\tparsed_url\n")

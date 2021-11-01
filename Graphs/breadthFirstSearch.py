@@ -22,19 +22,13 @@ def bfs(s,e):
 
     return reconstructPath(s, e, prev)
 
-
-def nodes_count(graph):
-    return len(graph)
-
-
 def solve(s):
     q = Queue()
     q.put(s)
-
-    nodes = nodes_count(graph)
-    visited = [False for i in range(0,nodes)] # nodes visited
+    nodes = len(graph)
+    visited = [False] * nodes
     visited[s] = True
-    prev = [None for i in range(0,nodes)] 
+    prev = [None] * nodes
 
     while not q.empty():
         node = q.get()
@@ -62,5 +56,5 @@ def reconstructPath(s, e, prev):
 
 
 # logic
-original_path = bfs(0,nodes-1)
+original_path = bfs(3,7)
 print(original_path)

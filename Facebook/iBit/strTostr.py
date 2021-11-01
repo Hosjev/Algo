@@ -1,3 +1,9 @@
+class Node:
+    """ Potential solution for using index references """
+    def __init__(self, value, indices):
+        self.value = value
+        self.indices = []
+
 class Trie:
     def __init__(self, string):
         self.root = {}
@@ -20,6 +26,7 @@ class Trie:
 
     def search(self, pattern):
         node = self.root
+        idx_flag = None
         for char in pattern:
             if char in node:
                 node = node[char]

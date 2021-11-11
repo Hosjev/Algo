@@ -10,15 +10,14 @@ class Solution:
             # Prime
             stack = []
             bfs_hash = {}
-            #key = 1
             stack.append((1, A))
             while stack:
-                key, node = stack.pop(0)
-                if not key in bfs_hash:
-                    bfs_hash[key] = [node.val]
-                else: bfs_hash[key].append(node.val)
-                if node.left: stack.append((key + 1, node.left))
-                if node.right: stack.append((key + 1, node.right))
+                level, node = stack.pop(0)
+                if not level in bfs_hash:
+                    bfs_hash[level] = [node.val]
+                else: bfs_hash[level].append(node.val)
+                if node.left: stack.append((level + 1, node.left))
+                if node.right: stack.append((level + 1, node.right))
 
             return list(bfs_hash.values())
 

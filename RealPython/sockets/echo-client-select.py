@@ -8,12 +8,16 @@ msgs = [b"First message from client",
         b"Second message from client", b"Third message from client"]
 HOST = "localhost"
 PORT = 65432
+L_FILE = "/home/wendiw/Xenial/PythonPlay/RealPython/sockets/logs/s.log"
 select = selectors.DefaultSelector()
 
 
+def write_msg(msg):
+    with open(L_FILE, "a") as fd:
+        fd.write(msg + "\n")
+
+
 # Where we mock our multiple connections to the server
-
-
 def start_connections(host, port, number_of_conns):
     server_address = (host, port)
     for connection_id in range(1, number_of_conns+1):
@@ -42,6 +46,8 @@ def service_connection(key, mask):
         recv_data = sock.recv(1024)
         # did we get data from socket
         if recv_data:
+            msg = f"\033[36m received data {repr(recv_data)} from ID {data.connid} \033[0m"
+            write_msg(msg)
             print(
                 f"\033[36m received data {repr(recv_data)} from ID {data.connid} \033[0m")
             data.recv_total += len(recv_data)

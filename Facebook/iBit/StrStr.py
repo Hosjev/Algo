@@ -1,5 +1,5 @@
 class Solution:
-    def strStr(self, A, B):
+    def strStr(self, A, B) -> int:
         # Edge Case(s)
         if len(A) == 0 or len(B) == 0:
             return -1
@@ -16,5 +16,5 @@ class Solution:
 
 
 A = "hellloooo"
-B = "lx"
+B = "lll"
 print(Solution().strStr(A, B))

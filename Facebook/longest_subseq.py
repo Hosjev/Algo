@@ -4,16 +4,11 @@ class Solution:
 
 
     def longest_subseq(self):
-        # Priming
-        # Each number, regardless of value, is ONE advance
         advances = [1] * len(self.nums)
 
-        # Now we count the number of absolute advances
-        # looking backward from each index
         for idx in range(1, len(self.nums)):
             for pointer in range(0, idx):
                 if self.nums[idx] > self.nums[pointer]:
-                    # Add the bounce and myself then compare
                     advances[idx] = max(advances[idx], advances[pointer] + 1)
 
          # O(N^2)

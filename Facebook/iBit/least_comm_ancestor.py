@@ -11,15 +11,15 @@ class Solution:
 	# @param C : integer
 	# @return an integer
 	def lca(self, A, B, C):
-            def bst_array(node, arr, n):
+            def bst_search(node, arr, n):
                 if not node:
                     return None
                 local_arr = arr + [node.val]
                 if node.val == n:
                     return local_arr
-                ans = bst_array(node.left, local_arr, n)
+                ans = bst_search(node.left, local_arr, n)
                 if not ans:
-                    ans = bst_array(node.right, local_arr, n)
+                    ans = bst_search(node.right, local_arr, n)
                 return ans
 
             def equalize(b, c):
@@ -30,8 +30,8 @@ class Solution:
                 return b, c
 
             # Main - steps
-            b = bst_array(A, [], B)
-            c = bst_array(A, [], C)
+            b = bst_search(A, [], B)
+            c = bst_search(A, [], C)
             # Early exit
             if not b or not c: return -1
             # Equalize each int

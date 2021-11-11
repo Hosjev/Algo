@@ -28,4 +28,4 @@ class Solution:
 
 
 
-print(Solution().solve(100))
+print(Solution().solve(8))

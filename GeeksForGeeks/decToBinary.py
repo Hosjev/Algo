@@ -45,7 +45,7 @@ if __name__ == "__main__":
     print(1 << 20)
 
     print("\nStarting count from 0:\n")
-    for x in range(130):
+    for x in range(255):
         if len(str(x)) == 1:
             print(f"Bit string for {x} is: {decimalToBinary(x):>20}")
         else:

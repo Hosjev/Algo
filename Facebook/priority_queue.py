@@ -18,17 +18,18 @@ class PriorityQueue:
 
     def extract_min(self):
         if not self.array: return
-        q_minimum = float("+inf")
+        q_minimum = float("+inf") # pointer
         for idx, item in enumerate(self.array):
             if item.key < q_minimum:
                 q_minimum = item.key
                 target = idx
-        return self.array.pop(idx)
+        return self.array.pop(target)
 
     def decrease_key(self, new_key, obj):
         if not self.array: return
         for item in self.array:
             if item.obj == obj:
+                # missing less than check/decr
                 item.key = new_key
                 return item
         return f"Obj {obj} not found"

@@ -28,7 +28,7 @@ class Stack:
         array_index = self.abs_index(stack_index)
         data = self.array[array_index]
         self.array[array_index] = None
-        self.pointers[stack_index] = -1
+        self.pointers[stack_index] -= 1
         return data
 
 

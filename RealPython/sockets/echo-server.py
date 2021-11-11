@@ -15,7 +15,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     # --we close() when out of WITH
     with connection:
         print(f"Connection made by: {address}")
-        while (True):
+        while True:
             data = connection.recv(1024)
             if not data:
                 print(f"...end of transmission from {address}")

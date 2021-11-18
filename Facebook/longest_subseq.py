@@ -1,7 +1,7 @@
 class Solution:
+    """ O(N * N/2) """
     def __init__(self, nums):
         self.nums = nums
-
 
     def longest_subseq(self):
         advances = [1] * len(self.nums)

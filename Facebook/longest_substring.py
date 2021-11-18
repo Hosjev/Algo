@@ -1,5 +1,5 @@
 class Substring:
-
+    """ O(n*m) """
     def longest_match(self, str1, str2):
         if not str1 or not str2: return ""
         str1 = "_" + str1

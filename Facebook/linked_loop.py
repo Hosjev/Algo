@@ -5,7 +5,7 @@ class Node:
         self.next = None
 
 class LinkedListLoop:
-
+    """ O(N) """
     def eval_start(self, node):
         # EC - empty or ONE
         if not node or not node.next:

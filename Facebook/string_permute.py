@@ -1,5 +1,5 @@
 class StringPerm:
-
+    """ O(S & P) O(N) """
     def __init__(self, string, perm):
         """ Input: 2 strs; Output: bool """
         self.string = string
@@ -34,11 +34,7 @@ class StringPerm:
         return True
 
 
-def main(s, p):
-    print(StringPerm(s, p).check_permutation())
-
-
 if __name__ == "__main__":
     s = "nib"
     p = "inx"
-    main(s, p)
+    print(StringPerm(s, p).check_permutation())

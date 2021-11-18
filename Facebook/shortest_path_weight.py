@@ -7,28 +7,28 @@ class Vertex:
         self.value = value
         self.weight = weight
 
+
 class Graph:
 
     def __init__(self):
-        self.graph = []
+        self.graph = dict()
 
-    def add_edge(self, v, e, w):
-        present = False
-        for i in self.graph:
-            if i.value == v:
-                i.adj.append(Vertex(e, w))
-                present = True
-        if not present:
-            node = Vertex(v)
+    def add_node(self, val):
+        if val not in self.graph:
+            node = Vertex(val)
+            self.graph[val] = node
+
+    def add_edge(self, val, e, w):
+        if val in self.graph:
+            node = self.graph[val]
+            node.adj.append(Vertex(e, w))
+        else:
+            self.add_node(val)
+            node = self.graph[val]
             node.adj = [Vertex(e, w)]
-            self.graph.append(node)
     
 
 class ShortestPath:
-
-    def _from_graph(self, g, val) -> int:
-        idx = [i for i in range(len(g.graph)) if g.graph[i].value == val]
-        return None if not bool(idx) else idx[0]
 
     def _eval_weight(self, resolution, new, node, edge):
         if edge.value not in resolution:
@@ -47,21 +47,20 @@ class ShortestPath:
 
     def find(self, g, start, end):
         # TODO: EC no start/end
+        # Resolution => to 0: weight, from
         resolution = {start: (0, None)}
-        visited = []
-        visited.append(start)
+        visited = [start]
         q = Queue() 
-        q.put(g.graph[self._from_graph(g, start)])
+        q.put(g.graph[start])
         while not q.empty():
             node = q.get()
             for edge in node.adj:
                 cur_w = resolution[node.value][0] + edge.weight
                 self._eval_weight(resolution, cur_w, node, edge)
                 if edge.value not in visited:
-                    idx = self._from_graph(g, edge.value)
-                    if idx:
-                        visited.append(edge.value)
-                        q.put(g.graph[idx])
+                    if edge.value in g.graph:
+                        q.put(g.graph[edge.value])
+                    visited.append(edge.value)
         path = self._reconstruct(resolution, end)
         return path
 

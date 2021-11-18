@@ -6,7 +6,7 @@ class Node:
 
 
 class InvertBinaryTree:
-
+    """ O(N) """
     def eval(self, tree):
         # As we approach level 2, do WHOLE subtree
         if not tree:

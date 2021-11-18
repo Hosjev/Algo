@@ -6,7 +6,7 @@ class Node:
 
 
 class LinkedListKthEnd:
-
+    """ O(N) twice """
     def total_nodes(self, node, t):
         if not node:
             return t
@@ -16,7 +16,7 @@ class LinkedListKthEnd:
         # Edge Case(s)
         if not node: return
         total = self.total_nodes(node, 0)
-        if total > k: return
+        if k > total: return
 
         count = 1
         while (total - k) != count:
@@ -26,16 +26,16 @@ class LinkedListKthEnd:
 
 
 def main():
-    tree = Node(1)
-    tree.next = Node(2)
-    tree.next.next = Node(3)
-    tree.next.next.next = Node(4)
-    tree.next.next.next.next = Node(5)
-    tree.next.next.next.next.next = Node(6)
-    tree.next.next.next.next.next.next = Node(7)
-    tree.next.next.next.next.next.next.next = Node(8)
-    tree.next.next.next.next.next.next.next.next = Node(9)
-    print(LinkedListKthEnd().eval(tree, 3).value)
+    linkedlist = Node(1)
+    linkedlist.next = Node(2)
+    linkedlist.next.next = Node(3)
+    linkedlist.next.next.next = Node(4)
+    linkedlist.next.next.next.next = Node(5)
+    linkedlist.next.next.next.next.next = Node(6)
+    linkedlist.next.next.next.next.next.next = Node(7)
+    linkedlist.next.next.next.next.next.next.next = Node(8)
+    linkedlist.next.next.next.next.next.next.next.next = Node(9)
+    print(LinkedListKthEnd().eval(linkedlist, 3).value)
 
 
 main()

@@ -1,6 +1,8 @@
-from mysql import connector
 import json
+
+from mysql import connector
 from pathlib import Path
+from argparse import ArgumentParser
 
 
 
@@ -51,23 +53,32 @@ class MySql:
         return data[0][0] if not M else data
 
 
+    def insert(self, d_id):
+        return
+
+
     def close(self):
         self.cnx.close()
 
 
 
 if __name__ == "__main__":
+    # We have 1 arg, drink name
+    parser = ArgumentParser(description="Drink database query")
+    parser.add_argument("--name", "-n", required=True)
+    args = parser.parse_args()
+
     # Open and read DB config file
     c_obj = IOFile(str(Path.cwd().joinpath("config", "mysql_db.json")))
     config = c_obj.open_file()["config"][0]
     cnx = MySql(connector.connect(**config))
 
     # Build object
+    # below - CBt-2oz whiskey or captains, 1oz Herring, 6oz ginger ale
+    # below - CBs-1oz whiskey or captains, tsp Herring
     drink = {
-            "name": "Whiskey Sour",
-            }
-    drink = {
-            "name": "Blood and Sand",
+            #"name": "Cherry Bomb (tall)",
+            "name": f"{args.name}",
             }
     query = (f"select drinks.id from drinks where drinks.drink_name = \"{drink['name']}\"")
     d_id = cnx.select_id(query)
@@ -85,12 +96,6 @@ if __name__ == "__main__":
             "where drinks.id = %s"
             )
     drink["container"] = cnx.select(query, d_id)
-    query = ("select instructions.description "
-            "from instructions "
-            "inner join drinks on instructions.drink_id = drinks.id "
-            "where drinks.id = %s"
-            )
-    drink["instructions"] = cnx.select(query, d_id)
     query = ("select measurements.amount, ingredients.ingredient_name "
             "from ingredient_combos "
             "inner join drinks on ingredient_combos.drink_id = drinks.id "
@@ -99,6 +104,16 @@ if __name__ == "__main__":
             "where drinks.id = %s"
             )
     drink["ingredients"] = cnx.select(query, d_id, True)
-    print(drink)
+    query = ("select instructions.description "
+            "from instructions "
+            "inner join drinks on instructions.drink_id = drinks.id "
+            "where drinks.id = %s"
+            )
+    drink["instructions"] = cnx.select(query, d_id)
+    for key, val in drink.items():
+        if key == "ingredients":
+            print(key)
+            [print("\t", x) for x in val]
+        else: print(key, ":", val)
 
     cnx.close()

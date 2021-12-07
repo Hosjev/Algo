@@ -1,3 +1,6 @@
+import sys
+sys.path.append("/home/hosjev/.local/lib/python3.6/site-packages")
+
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -33,3 +36,5 @@ def add_country():
         return country, 201
     return {"error": "Request must be JSON formatted"}, 415
 
+if __name__ == "__main__":
+    app.run(debug=True)

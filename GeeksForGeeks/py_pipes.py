@@ -13,7 +13,7 @@ pid = os.fork()
 if pid > 0:
     # PARENT
     # close read channel
-    #os.close(r)
+    os.close(r)
     print("Hello from parent at PID: ", parent)
     msg = b"...writing to channel for child"
     os.write(w, msg)

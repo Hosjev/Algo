@@ -30,5 +30,5 @@ def convert_roman_to_integer(s: str) -> int:
     return answer_sum
 
 
-print(convert_roman_to_integer("MCMXV"))
-print(convert_roman_to_integer("MCXV"))
+print(convert_roman_to_integer("MCMXV")) # 1915
+print(convert_roman_to_integer("MCXV")) # 1115

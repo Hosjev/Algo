@@ -8,7 +8,6 @@ class Stack:
 
     def __init__(self):
         self.head = Node("head")
-        self.head.next = None
         self.size = 0
 
     def push(self, data):

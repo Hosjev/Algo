@@ -4,7 +4,7 @@ class Substring:
         if not str1 or not str2: return ""
         str1 = "_" + str1
         str2 = "_" + str2
-        matrix = [[0 for j in range(len(str2))]for i in range(len(str1))]
+        matrix = [[0 for j in range(len(str2))] for i in range(len(str1))]
         for i in range(1, len(matrix)):
             for j in range(1, len(matrix[i])):
                 if str1[i] == str2[j]:

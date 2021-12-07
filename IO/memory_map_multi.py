@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from multiprocessing import shared_memory
 from multiprocessing import Array
 # < 3.8 has pretty limited and weird looking array/vals/obj shm implementation
 

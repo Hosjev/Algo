@@ -4,7 +4,7 @@ class MergeArrays:
         if not bool(A): return B
         if not bool(B): return A
 
-        Pi = len(A) - 1
+        flex = len(A) - 1
         Pb = len(B) - 1
         try:
             Pa = max([i for i,e in enumerate(A) if e])
@@ -12,14 +12,14 @@ class MergeArrays:
             return B
         while Pa >= 0 and Pb >= 0:
             if A[Pa] > B[Pb]:
-                A[Pi] = A[Pa]
+                A[flex] = A[Pa]
                 Pa -= 1
                 while A[Pa] is None:
                     Pa -= 1
             else:
-                A[Pi] = B[Pb]
+                A[flex] = B[Pb]
                 Pb -= 1
-            Pi -= 1
+            flex -= 1
         # Last check
         if Pa < 0: A[0] = B[0]
         return A

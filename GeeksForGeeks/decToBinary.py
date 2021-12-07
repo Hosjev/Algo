@@ -51,3 +51,12 @@ if __name__ == "__main__":
         else:
             print(f"Bit string for {x} is: {decimalToBinary(x):>19}")
     print("\n")
+
+    print("\nLooking at sets:\n")
+    for x in range(75,301):
+        if set(str(x)) == set(str(x)[0]):
+            if len(str(x)) == 1:
+                print(f"Bit string for {x} is: {decimalToBinary(x):>20}")
+            else:
+                print(f"Bit string for {x} is: {decimalToBinary(x):>19}")
+    print("\n")

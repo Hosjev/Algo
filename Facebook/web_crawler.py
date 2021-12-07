@@ -1,6 +1,7 @@
-#!/usr/bin/python3.7
+#!/usr/bin/python
 
 import sys
+sys.path.append("/home/hosjev/.local/lib/python3.6/site-packages")
 import re
 import asyncio
 import aiofiles

@@ -1,8 +1,9 @@
 class Solution:
     def addBinary(self, a, b):
         def binary_to_decimal(binary):
-            decimal = i = 0
-            while(binary != 0):
+            decimal, i = 0, 0
+            while binary != 0:
+                print(binary)
                 rem = binary % 10
                 decimal = decimal + (rem * pow(2, i))
                 binary = binary//10

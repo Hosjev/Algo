@@ -24,6 +24,6 @@ if __name__ == "__main__":
     parser.add_argument("--dir")
     args = parser.parse_args()
 
-    dobj = DirContents("/home/wendiw/Xenial/PythonPlay/IO")
+    dobj = DirContents("/home/hosjev/PythonPlay/IO")
     dobj = DirContents(Path(args.dir))
     dobj.tree()

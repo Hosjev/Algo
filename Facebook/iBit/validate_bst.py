@@ -5,20 +5,15 @@ class TreeNode:
 
 class Solution:
     def isValidBST(self, A):
-        def validateBst(tree):
-            # Feed the external validation: tree, neg int, pos int
-            return recur_validation(tree, float("-inf"), float("inf"))
-
         def recur_validation(tree, min_v, max_v):
             if not tree:
                 # Reached empty node
                 return True
             if (tree.val < min_v) or (tree.val >= max_v):
                 return False
-            down_result = recur_validation(tree.left, min_v, tree.val)
-            return down_result and recur_validation(tree.right, tree.val, max_v)
-        result = validateBst(A)
-        return 1 if result else 0
+            left = recur_validation(tree.left, min_v, tree.val)
+            return left and recur_validation(tree.right, tree.val, max_v)
+        return recur_validation(tree, float("-inf"), float("inf"))
 
 
 def tree1():

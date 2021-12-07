@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 """Use multi-processing for CPU bound tasks and true parallelism (full code copy in memory for each process--GIL workaround)."""
 import logging
 import os
@@ -5,8 +7,9 @@ import sys
 import time
 from functools import partial
 from multiprocessing.pool import Pool
-curr_wd = "/home/wendiw/Xenial/PythonPlay"
+curr_wd = "/home/hosjev/PythonPlay"
 sys.path.append(curr_wd)
+sys.path.append("/home/hosjev/.local/lib/python3.6/site-packages")
 from TopTal.download import *
 from Utilities.custlogging import py_logger
 

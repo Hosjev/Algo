@@ -1,2 +1,4 @@
 https://wwhitsett.info
 http://wstone.site
+http://gnu.org/software/bash/manual
+http://gnu.org/manual

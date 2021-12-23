@@ -19,7 +19,7 @@ class Solution:
             if nums[actual_M] == target:
                 return actual_M
             else:
-                return - 1
+                return -1
         if nums[actual_M] == target:
             return actual_M
         elif nums[actual_M] > target:
@@ -31,11 +31,13 @@ class Solution:
     def search(self, nums, target):
         # Return index of target
         pivot = self.pivot_search(nums, 0, len(nums) - 1)
+        if not pivot: pivot = 0
         return self.binary_search(0, len(nums) - 1, pivot, nums, target)
 
 
 
 if __name__ == "__main__":
     n = [4,5,6,7,0,1,2]
-    t = 8
+    t = 5
+    n = [1, 3]
     print(Solution().search(n,t))

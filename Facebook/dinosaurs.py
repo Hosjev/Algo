@@ -4,6 +4,7 @@ class Dinos:
         self.cache = dict()
 
     def _get_speed(self, leg, stride):
+        # Missing force of gravity, obvs
         return float(leg) * float(stride)
 
     def _build_speed(self):
@@ -17,13 +18,9 @@ class Dinos:
             header = fd.readline().strip()
             for line in fd.readlines():
                 contents.append(line.strip())
-        #return header, contents
         self._add_to_cache(header, contents)
 
     def _add_to_cache(self, header, contents):
-        # h "name,bar,bat"
-        # c ["name,foo,bar"]
-        # c [ 0     1   2
         headers = header.split(",")
         for i in range(1, len(headers)):
             for dino in contents:
@@ -34,8 +31,6 @@ class Dinos:
                     self.cache[line[0]] = {headers[i]: line[i]}
 
     def get_bipeds(self):
-        # [(name, speed)... ]
-        # return sorted by i[1]
         result = []
 
         for k, v in self.cache.items():

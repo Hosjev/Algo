@@ -13,7 +13,6 @@ class Solution:
                 local_slice = string[start:i]
             if len(local_slice) > 0:
                 inds[i] = (i - start) + 1
-            print(i, start, local_slice, inds)
 
         return max(inds)
 
@@ -21,6 +20,5 @@ class Solution:
 if __name__ == "__main__":
     print(Solution().longest_nodups("bbbb"))
     print(Solution().longest_nodups("abcabcbb"))
-    #rint(Solution().longest_nodups("01234567"))
     print(Solution().longest_nodups("abcdefge"))
     print(Solution().longest_nodups("pwwkew"))

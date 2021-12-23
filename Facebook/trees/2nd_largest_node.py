@@ -1,5 +1,5 @@
 import sys
-sys.path.append("./Facebook")
+sys.path.append("./Facebook/trees")
 from bst_min_height import BST
 
 class NodeSearch:
@@ -21,7 +21,7 @@ class NodeSearch:
 
 def main():
     a = [1,2,3,4,5,6,7,8]
-    a = [1]
+    #a = [1]
     tree = BST().make_tree(a)
     print(NodeSearch().sec_largest(tree))
 

@@ -5,7 +5,6 @@ from collections import defaultdict, Counter, deque
 class Solution:
 
     def alienOrder(self, words: List[str]) -> str:
-        # graph = dict.fromkeys(set("".join(words), []))
         adj_list = defaultdict(set)
         in_degree = Counter({c : 0 for word in words for c in word})
             

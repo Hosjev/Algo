@@ -14,7 +14,7 @@ from pathlib import Path
 
 
 
-class WebAPI:
+class Web:
     def __init__(self, url):
         self.url = url
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     # The goodies
     read_url = IOFile(file_containing_url).read_file()
-    web_object = WebAPI(read_url)
+    web_object = Web(read_url)
     web_object.get_resource()
     url_data = web_object.parse_json()
 

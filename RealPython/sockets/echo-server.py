@@ -1,6 +1,6 @@
 import socket
 
-HOST = "localhost"
+HOST = "192.168.2.181"
 PORT = 65432
 
 # The WITH statement below acts like Java's try-with-resources

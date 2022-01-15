@@ -10,7 +10,7 @@ class Solution:
             "I": 1     # I
         }
 
-    def roman(self, string):
+    def roman(self, string) -> int:
         last_int = self.roman_hash["M"]
         answer_sum = 0
 
@@ -20,7 +20,7 @@ class Solution:
             # if current value is greater than last
             if current_int > last_int:
                 answer_sum -= (last_int * 2)
-            last_int = current_int
+            last_int = self.roman_hash[roman_numeral]
 
         return answer_sum
 

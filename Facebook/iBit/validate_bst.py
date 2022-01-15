@@ -13,7 +13,7 @@ class Solution:
                 return False
             left = recur_validation(tree.left, min_v, tree.val)
             return left and recur_validation(tree.right, tree.val, max_v)
-        return recur_validation(tree, float("-inf"), float("inf"))
+        return recur_validation(A, float("-inf"), float("inf"))
 
 
 def tree1():
@@ -57,6 +57,6 @@ def tree3():
 if __name__ == "__main__":
 
     # My nested tree object
-    tree = tree1()
+    tree = tree2()
 
     print(Solution().isValidBST(tree))

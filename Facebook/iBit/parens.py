@@ -18,5 +18,5 @@ class Solution:
         # Main
         return paren_helper([], 0, 0)
 
-n = 1
+n = 3
 print(Solution().generateParenthesis(n))

@@ -2275,3 +2275,11 @@ Mon Mar 30 19:03:23 2020--Took 15.768315315246582 seconds to download 31 images.
 2021-11-24 13:18:13,918 - TopTal_multi.TopTal.download - INFO - Downloaded: https://i.imgur.com/vIkkJEz.png
 2021-11-24 13:18:13,934 - TopTal_multi - INFO - 36 Imgur images downloaded in 3.6681578159332275.
 2021-11-24 13:18:13,934 - TopTal_multi - INFO - Average time for download: 0.10189327266481188.
+2022-01-10 19:30:46,373 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2022-01-10 19:30:46,373 - TopTal_multi.TopTal.download - ERROR - on file video/mp4 received: <class 'AttributeError'>
+2022-01-10 19:30:46,373 - TopTal_multi.TopTal.download - ERROR - on file image/gif received: <class 'AttributeError'>
+2022-01-10 19:30:46,374 - TopTal_multi.TopTal.download - ERROR - on file image/jpeg received: <class 'AttributeError'>
+2022-01-10 19:30:46,374 - TopTal_multi.TopTal.download - ERROR - on file image/gif received: <class 'AttributeError'>
+2022-01-10 19:30:46,374 - TopTal_multi.TopTal.download - ERROR - on file image/gif received: <class 'AttributeError'>
+2022-01-10 19:30:46,374 - TopTal_multi.TopTal.download - ERROR - on file video/mp4 received: <class 'AttributeError'>
+2022-01-10 19:30:46,374 - TopTal_multi.TopTal.download - ERROR - on file video/mp4 received: <class 'AttributeError'>

@@ -10,14 +10,7 @@ class Solution:
             return "0"
         
         # Prime
-        N = len(num1) + len(num2)
-        answer = [0] * N
-        
-        # Reverse num1 and num2
-        # 25 becomes 52; 12 becomes 21 = 300
-        # So that we add 5 2
-        #                2 1
-        #    left-most first
+        answer = [0] * (len(num1) + len(num2))
         first_number = num1[::-1]
         second_number = num2[::-1]
         
@@ -25,10 +18,6 @@ class Solution:
             for place1, digit1 in enumerate(first_number):
                 num_zeros = place1 + place2
                 carry = answer[num_zeros]
-                # To truly use non-multiplier, below would be a recursive add
-                # multi_res = self._add_recurse(digit1, 0, digit2, 0)
-                # and to improve runtime, choose smaller digit as nth min/max
-                #multiplication = int(digit1) * int(digit2) + carry
                 s = min(int(digit1), int(digit2))
                 l = max(int(digit1), int(digit2))
                 multiplication = self._add_recurse(s, 0, l, 0) + carry
@@ -45,3 +34,5 @@ class Solution:
 
 if __name__ == "__main__":
     print(Solution().multiply("25", "12"))
+    print(Solution().multiply("123", "456"))
+    print(Solution().multiply("999", "0"))

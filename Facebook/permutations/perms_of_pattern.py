@@ -1,3 +1,7 @@
+from collections import defaultdict
+
+
+
 class Permutations:
     
     def count_matches(self, source, pattern):
@@ -7,12 +11,9 @@ class Permutations:
             return 0
 
         # Build a cache of key/val where key = char / val = list of indices
-        cache = dict()
+        cache = defaultdict(list)
         for idx, val in enumerate(source):
-            try:
-                cache[val].append(idx)
-            except KeyError:
-                cache[val] = [idx]
+            cache[val].append(idx)
         
         # Build nested list of indices
         temp = [cache[i] for i in pattern if cache[i]]

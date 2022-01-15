@@ -4,7 +4,7 @@ import sys
 import time
 from redis import Redis
 from rq import Queue
-curr_wd = "/home/wendiw/Xenial_Backup/PythonPlay"
+curr_wd = "/home/hosjev/PythonPlay"
 sys.path.append(curr_wd)
 from TopTal.download import *
 from Utilities.custlogging import py_logger

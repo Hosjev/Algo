@@ -22,6 +22,7 @@ class Dinos:
 
     def _add_to_cache(self, header, contents):
         headers = header.split(",")
+        # Trash first column
         for i in range(1, len(headers)):
             for dino in contents:
                 line = dino.split(",")
@@ -31,8 +32,8 @@ class Dinos:
                     self.cache[line[0]] = {headers[i]: line[i]}
 
     def get_bipeds(self):
+        """ Return fastest to slowest """
         result = []
-
         for k, v in self.cache.items():
             if v["TYPE"] == "bipedal":
                 result.append((k, v["SPEED"]))

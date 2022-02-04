@@ -1,12 +1,11 @@
 class FatFinger:
     """ TYPEAHEAD """
+
     def __init__(self, word):
         self.candidates = self.neighbor_helper(word)
 
-
     def permute_helper(self, placeholder, parent_idx, words):
         # Recursive
-        # Exit and/or add
         # O(N) => candidates ^ characters in word O(3^4) [xxxx]
         # TODO: turn into on-demand generator
         if parent_idx == len(self.candidates):
@@ -21,10 +20,8 @@ class FatFinger:
         # Up the stack
         return words
 
-
     def word_helper(self, word):
         return True
-
 
     def neighbor_helper(self, word):
         candidates = []
@@ -53,6 +50,5 @@ if __name__ == "__main__":
     # ALWAYS ALWAYS consider edge cases 2nd
     # Ask them ?s about the job and their take on an average day?
     f_obj = FatFinger("byeb")
-    #f_obj = FatFinger("")
     results = f_obj.permute_helper("", 0, [])
     print(results, len(results))

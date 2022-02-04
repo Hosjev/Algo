@@ -26,4 +26,5 @@ class Solution:
 
 if __name__ == "__main__":
     n = [0, 1, 3, 50, 75]
+    # return [2, 4,49, 51,74, 76,99]
     print(Solution().findMissingRanges(n, 0, 99))

@@ -6,17 +6,17 @@ class Node:
 
 class BST:
 
-    def recurse(self, node, subLeft, subRight):
+    def recurse(self, parent, subLeft, subRight):
         if not subLeft and not subRight:
             return
         if subLeft:
             m_l = len(subLeft) // 2
-            node.left = Node(subLeft[m_l])
-            self.recurse(node.left, subLeft[0:m_l], subLeft[m_l+1:])
+            parent.left = Node(subLeft[m_l])
+            self.recurse(parent.left, subLeft[0:m_l], subLeft[m_l+1:])
         if subRight:
             m_r = len(subRight) // 2
-            node.right = Node(subRight[m_r])
-            self.recurse(node.right, subRight[0:m_r], subRight[m_r+1:])
+            parent.right = Node(subRight[m_r])
+            self.recurse(parent.right, subRight[0:m_r], subRight[m_r+1:])
         
     def make_tree(self, array):
         middle = len(array) // 2

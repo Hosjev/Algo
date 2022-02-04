@@ -6,19 +6,22 @@ class Solution:
     def longest_subseq(self):
         advances = [1] * len(self.nums)
 
+        count = 0
         for idx in range(1, len(self.nums)):
             for pointer in range(0, idx):
+                count += 1
                 if self.nums[idx] > self.nums[pointer]:
                     advances[idx] = max(advances[idx], advances[pointer] + 1)
 
-         # O(N^2)
+        print(count)
         return max(advances)
 
 
-n = [0, 8, 4, 2, 3, 4]
-n = [15, 8, 4, 2, 3, 4]
-n = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]
-n = [ 84, 80, 27 ]
+if __name__ == "__main__":
+    n = [0, 8, 4, 2, 3, 4]
+    n = [15, 8, 4, 2, 3, 4]
+    n = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]
 
-a = Solution(n)
-print(a.longest_subseq())
+    print(len(n))
+    a = Solution(n)
+    print(a.longest_subseq())

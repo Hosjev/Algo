@@ -1,3 +1,4 @@
+""" This calcs the LEFTOVER chars after finding a longest palindrome (HATE; also--single char counts) """
 class Solution:
     # @param A : string
     # @return an integer
@@ -44,17 +45,18 @@ class Solution:
         if p_length[1] != len(A) - 1: return len(A) - 1
         else: return len(A) - (p_length[1] - p_length[0] + 1)
 
-A = "abede"
-print(Solution().solve(A))
-A = "abbb"
-print(Solution().solve(A))
-A = "abcd"
-print(Solution().solve(A))
-A = "aabb"
-print(Solution().solve(A))
-A = "oqycntornscygodzdctxnhoc"
-print(Solution().solve(A))
-A = "uvsghsfqzryzfcadvkmkr"
-print(Solution().solve(A))
-A = "qyvvfrvbdqriuhtasageryqysllgf"
-print(Solution().solve(A))
+if __name__ == "__main__":
+    A = "abede"
+    print(Solution().solve(A))
+    A = "abbb"
+    print(Solution().solve(A))
+    A = "abcd"
+    print(Solution().solve(A))
+    A = "aabb"
+    print(Solution().solve(A))
+    A = "oqycntornscygodzdctxnhoc"
+    print(Solution().solve(A))
+    A = "uvsghsfqzryzfcadvkmkr"
+    print(Solution().solve(A))
+    A = "qyvvfrvbdqriuhtasageryqysllgf"
+    print(Solution().solve(A))

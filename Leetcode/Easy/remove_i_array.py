@@ -1,42 +1,44 @@
-def remove_val_array(nums, val):
-    """
-    1. linear iterate
-    2. if i is target val
-       a. replace with slicing
-    3. same return
-    """
-    if not nums: return 0
-    idx = 0
+class Solution:
 
-    # straight iter doesn't work b/c of changing data
-    while not idx >= len(nums):
-
-        # An early out as we change list in place
-        if isinstance(nums[idx], str): break
-
-        while nums[idx] == val:
-            adjust_slices(idx, nums)
-        
-        # Only advance when the above condition is False
-        idx += 1
-
-    print(nums) # return idx
-    print(idx)
-    return len([x for x in nums if isinstance(x, int)])
+    def _remove_val_array(self, nums, val):
+        # Returns no object, alters in place
+        # Edge Case(s)
+        if val not in nums:
+            return nums
+        idx = 0
+        nums.sort()
+        while idx < len(nums):
+            while idx < len(nums) and nums[idx] == val:
+                nums.remove(val)
+            idx += 1
+        return
 
 
-def adjust_slices(idx, nums):
-   # repl from 1st dup to end w/last dup to end + x's
-   nums[idx:] = nums[idx+1:] + ["x"]
+    def remove_val_array(self, nums, val):
+        # Returns new object
+        # Edge Case(s)
+        if val not in nums: return nums
+
+        # Prime
+        pointer = len(nums) - 1
+        nums.sort()
+        for i, n in enumerate(nums):
+            if n == val:
+                nums[i], nums[pointer] = nums[pointer], nums[i]
+                pointer -= 1
+            if pointer <= i: break
+        return nums[0:pointer + 1]
 
 
-a = [0, 0, 1, 1, 1, 2, 3, 4]
-a = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
-
-a = [0, 0, 1, 1]
-a = [1, 3, 4, 2, 5, 6, 7, 2, 2, 2, 2, 2]
-a = [2, 2]
-a = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
-# need to optimize this for ridiculous arrays
-# I can optimize by getting a count and then do slicing
-print(remove_val_array(a, 100))
+if __name__ == "__main__":
+    a = [0, 0, 1, 1, 1, 2, 3, 4]
+    a = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
+    a = [0, 0, 1, 1]
+    a = [1, 3, 4, 2, 5, 6, 7, 2, 2, 2, 2, 2]
+    a = [2, 2]
+    a = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
+    a = [1, 3, 4, 2, 5, 6, 7, 2, 2, 2, 2, 2]
+    t = 2
+    obj = Solution()
+    n = obj.remove_val_array(a, t)
+    print(n)

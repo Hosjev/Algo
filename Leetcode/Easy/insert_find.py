@@ -1,3 +1,22 @@
+class Solution:
+
+    def _binary_search(self, L, R, nums, T):
+        if L == R:
+            if L == len(nums) - 1 and T > nums[L]:
+                return L + 1
+            else: return L
+        M = (L + R) // 2
+        if nums[M] == T:
+            return M
+        elif nums[M] > T:
+            return self._binary_search(L, M - 1, nums, T)
+        else:
+            return self._binary_search(M + 1, R, nums, T)
+
+    def insert_or_find(self, nums, target):
+        return self._binary_search(0, len(nums) - 1, nums, target)
+
+
 def insert_or_find(nums, target):
     """
     1. given a sorted array, find target or index
@@ -11,19 +30,6 @@ def insert_or_find(nums, target):
 
 
 def binary_helper(S, E, nums, target):
-    """
-    This helper follows indices
-
-    Arguments:
-        S = int (starting index within array)
-        E = int (ending index within array)
-        nums = array
-        target = int (number to look for)
-
-    ** equation = (E - S) // 2 = len of stretch
-    """    
-
-    # Our exit or 1st return up the stack should we reach last
     if (S == E):
         # If at end AND target is greater than last index int
         if (S == len(nums) - 1) and (target > nums[S]):
@@ -53,17 +59,20 @@ def binary_helper(S, E, nums, target):
 
 
 
-
-a = [0, 1, 2, 3, 4, 5, 6, 7] # indices
-a = [1, 2, 3, 4, 5, 6, 7, 8]
-a = [1, 2, 3, 5, 6, 7, 9, 10, 11]
-t = 8
-a = [1]
-t = 0
-a = [1, 2, 3]
-t = 0
-print(insert_or_find(a, t))
-
-# 1st problem -- end of array
-print(insert_or_find([1, 3, 5, 6], 7))
-print(insert_or_find([1, 3, 5, 8], 7))
+if __name__ == "__main__":
+    a = [0, 1, 2, 3, 4, 5, 6, 7] # indices
+    a = [1, 2, 3, 4, 5, 6, 7, 8]
+    a = [1, 2, 3, 5, 6, 7, 9, 10, 11]
+    t = 8
+    a = [1]
+    t = 0
+    a = [1, 2, 3]
+    t = 0
+    a = [1, 3, 5, 8]
+    t = 0
+    obj = Solution()
+    print(obj.insert_or_find(a, t))
+    
+    # 1st problem -- end of array
+    print(insert_or_find([1, 3, 5, 6], 7))
+    print(insert_or_find([1, 3, 5, 8], 7))

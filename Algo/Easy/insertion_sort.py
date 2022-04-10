@@ -1,7 +1,20 @@
 """
 Write function that takes array of ints and returns a sorted version. Using the insertion algorithm.
 Input:
-    array = [8, 5, 2, 9, 5, 6, 3]
+    array = [8, 5, 2, 9, 5, 7, 3] 0
+    array = [5, 8, 2, 9, 5, 6, 3]
+    array = [5, 2, 8, 9, 5, 6, 3] 1
+    array = [2, 5, 8, 9, 5, 6, 3] 1
+    array = [2, 5, 8, 9, 5, 6, 3] 2
+    array = [2, 5, 8, 5, 9, 6, 3] 3
+    array = [2, 5, 5, 8, 9, 6, 3] 3
+    array = [2, 5, 5, 8, 9, 6, 3] 4
+    array = [2, 5, 5, 8, 6, 9, 3] 4
+    array = [2, 5, 5, 6, 8, 9, 3] 4
+    array = [2, 5, 5, 6, 8, 9, 3] 5
+    array = [2, 5, 5, 6, 3, 8, 9] 5
+    array = [2, 5, 5, 3, 6, 8, 9] 5
+    array = [2, 3, 5, 5, 6, 8, 9] 5
 Output:
     [2, 3, 5, 5, 6, 8, 9]
 

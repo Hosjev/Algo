@@ -7,4 +7,3 @@ def mmap_io(in_file):
 
 
 mmap_io("/home/hosjev/PythonPlay/README.md")
-mmap_io("/tmp/Xorg.crouton.1.log")

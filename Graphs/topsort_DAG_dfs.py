@@ -12,7 +12,6 @@ def topSort(g):
     i = n - 1
 
     for node in range(n):
-        print("processing node:", node)
         if visited[node] == False:
             i = dfs_top(i, node, visited, order, g)
 
@@ -26,7 +25,6 @@ def dfs_top(i, node, visited, order, g):
 
     edges = g.adjacent[node]
     for edge in edges:
-        print("...inside edges for node:", node, edge.id)
         if visited[edge.id] == False:
             i = dfs_top(i, edge.id, visited, order, g)
 
@@ -38,17 +36,6 @@ def dfs_top(i, node, visited, order, g):
 
 if __name__ == "__main__":
     # My graph
-    # < L or up; > R or down
-    # 0<-- 4 -->8
-    #  \<  \>
-    #   2   5
-    #   >\ /<
-    #     1  7
-    #   </  </
-    # 3    </
-    #  <\ </
-    #    6
-    #
 
     g = Graph(9, reverse = False)
     g.add_edge(1, 5)

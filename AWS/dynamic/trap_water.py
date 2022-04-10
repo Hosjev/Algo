@@ -15,7 +15,7 @@ class Solution:
         for i in range(len(height)-2, -1, -1):
             right[i] = max(height[i+1], right[i+1])
 
-        for i in range(len(height)):
+        for i in range(1, len(height)-2):
             min_wall = min(left[i], right[i])
             if height[i] < min_wall:
                 total += min_wall - height[i]

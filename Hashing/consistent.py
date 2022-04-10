@@ -16,6 +16,20 @@ class StorageNode:
         return f"{path}"
 
 
+class Hash:
+    def __init__(self):
+        self.total_slots = pow(2, 256)
+        self.nodes = []
+        self._keys = {}
+
+    def add_node(self, node):
+        key = hash_function(node.host, self.total_slots)
+        index = bisect(self._keys, key)
+        self.nodes.insert(index, node)
+        self._keys.insert(index, key)
+        return key
+
+
 storage_nodes = [
         # Some named object/class
         StorageNode(name="A", host="10.22.101.34"),
@@ -47,9 +61,9 @@ def upload(path):
 
 
 def fetch(path):
-    index = _get_index(path)
-    node = _get_node(index)
-    print(f"Here is our randomized index/node: {index, node.name}")
+    #index = _get_index(path)
+    #node = _get_node(index)
+    #print(f"Here is our randomized index/node: {index, node.name}")
     return node.fetch_file(path)
 
 

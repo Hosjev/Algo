@@ -4,6 +4,7 @@ class Song:
         self.title = title
         self.artist = artist
 
+    # serializable.serialize(serializer)
     def serialize(self, serializer):
         serializer.start_object('song', self.song_id)
         serializer.add_property('title', self.title)

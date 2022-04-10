@@ -3,6 +3,7 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: int
+        THIS SHIT IS BROKE
         """
         # Edge case(s)
         if nums[0] == 0 or len(nums) == 1:
@@ -32,8 +33,8 @@ class Solution(object):
         return 1 if jumps == 0 else jumps
 
 
-n = [2, 3, 1, 1, 4]
 n = [5, 5, 1, 1, 1, 1, 1, 1, 1, 1, 4] # 6
 n = [2, 3, 1, 1, 4]
+n = [3, 2, 1, 0, 4]
 s = Solution()
 print(s.jump(n))

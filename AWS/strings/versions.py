@@ -3,27 +3,19 @@ from typing import List
 
 
 class Solution:
-    def get_next_chunk(self, version: str, n: int, p: int) -> List[int]:
-        if p > n - 1:
-            return 0, p
-        p_end = p
-        while p_end < n and version[p_end] != '.':
-            p_end += 1
-        i = int(version[p:p_end]) if p_end != n - 1 else int(version[p:n])
-        p = p_end + 1
-        return i, p
-
     def compareVersion(self, version1: str, version2: str) -> int:
-        p1 = p2 = 0
-        n1, n2 = len(version1), len(version2)
+        v1 = version1.split('.')
+        v2 = version2.split('.')
+        n1, n2 = len(v1), len(v2)
 
-        # Logic
-        while p1 < n1 or p2 < n2:
-            i1, p1 = self.get_next_chunk(version1, n1, p1)
-            i2, p2 = self.get_next_chunk(version2, n2, p2)
+        # compare versions
+        for i in range(max(n1, n2)):
+            i1 = int(v1[i]) if i < n1 else 0
+            i2 = int(v2[i]) if i < n2 else 0
             if i1 != i2:
                 return 1 if i1 > i2 else -1
 
+        # the versions are equal
         return 0
 
 

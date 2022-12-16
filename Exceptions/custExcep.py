@@ -5,7 +5,7 @@ import random
 
 sys.path.append("/home/wendiw/Xenial/PythonPlay")
 
-from Exceptions.GuessGameErrs import *
+from GuessGameErrs import *
 
 # our main program
 # user guesses a number until he/she gets it right

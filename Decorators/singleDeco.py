@@ -25,14 +25,3 @@ def make_greeting(name, age=None):
 def say_greet(person):
     #print(f"Greeting this person {person}")
     return f"Greeting this person {person}"
-
-###################
-print("NEW tests...")
-mg = make_greeting("Bill", 66)
-print(mg)
-
-
-###
-print("\nNEW tests...")
-sg = say_greet("SALLY!!!")
-print(sg)

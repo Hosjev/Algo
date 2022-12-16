@@ -16,7 +16,7 @@ def tail_recurse(func):
     **using:
           1) decorate function/method w/tail_recurse
           2) which simply returns the object execution
-          3) call recurse instead of function/method inside
+          3) return `recurse` instead of named function/method
           4) which raises 'Recursion' (catching RE)
           5) which sets variables to object
           6) when RE occurs, reset those variables and...
@@ -27,8 +27,8 @@ def tail_recurse(func):
         while True:
             try:
                 return func(*args, **kwargs)
-            except Recursion as r:
-                args = r.args
-                kwargs = r.kwargs
-                continue
+            except Recursion as r: # catch RE
+                args = r.args      # build new object
+                kwargs = r.kwargs  # build new object
+                continue           # re-enter try block
     return decorated

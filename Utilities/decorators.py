@@ -44,11 +44,9 @@ def repeat(_func=None, *, num_times=1):
                 value = func(*args, **kwargs)
             return value
         return wrapper_repeat
-
-    if _func is None:
+    if not _func:
         return dec_repeat
-    else:
-        return dec_repeat(_func)
+    return dec_repeat(_func)
 
 
 def timer(func):
@@ -89,7 +87,23 @@ def dec_pa(func):
 
 
 def slow_down(_func=None, *, rate=1):
-    """Sleep {rate} second before calling the function"""
+    """
+    Sleep {rate} second before calling the function
+
+    Since the function to decorate is only passed in directly
+    if the decorator is called without arguments, the function
+    must be an optional argument. This means that the decorator
+    arguments must all be specified by keyword. You can enforce
+    this with the special * syntax, which means that all following
+    parameters are keyword-only.
+
+    Arguments:
+        _func: <function> present IF decorator used w/args
+            *: <see above>
+         rate: <int> how many seconds we wait
+    Returns:
+        An inner or outer wrapper.
+    """
     def dec_slow_wrap(func):
         @functools.wraps(func)
         def wrapper_slow_down(*args, **kwargs):

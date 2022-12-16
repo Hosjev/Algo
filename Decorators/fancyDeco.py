@@ -18,9 +18,8 @@ class WasteTime:
     @timer
     def exp_waster(self):
         for _ in range(self.max_t):
-             sum([i**2 for i in range(10000)])
+             sum([i**2 for i in range(100)])
 
-@debug
 @slow_down(rate=1)
 def countdown(from_number):
     """Note that to make use of the slow down decorator

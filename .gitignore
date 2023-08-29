@@ -6,3 +6,5 @@ __pycache__/
 
 ### Mysql ###
 mysql_db.json
+
+node_modules/
